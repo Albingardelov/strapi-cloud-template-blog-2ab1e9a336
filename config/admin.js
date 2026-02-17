@@ -1,4 +1,8 @@
 module.exports = ({ env }) => ({
+  secrets: {
+    // Used to encrypt sensitive admin data (e.g. token display). Recommended in Strapi v5+.
+    encryptionKey: env('ENCRYPTION_KEY'),
+  },
   auth: {
     secret: env('ADMIN_JWT_SECRET'),
   },
