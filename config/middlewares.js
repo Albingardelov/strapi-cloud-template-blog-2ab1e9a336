@@ -8,6 +8,7 @@ module.exports = [
       origin: [
         'http://localhost:5173',
         'https://good-as-you-are-examensarbete.vercel.app',
+        'https://good-as-you-are-examensarbete-pbl4zb2jz.vercel.app',
       ],
       headers: '*',
     },
