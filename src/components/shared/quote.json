@@ -11,6 +11,15 @@
     },
     "body": {
       "type": "text"
+    },
+    "theme": {
+      "type": "enumeration",
+      "default": "default",
+      "enum": [
+        "default",
+        "tinted",
+        "accent"
+      ]
     }
   }
 }

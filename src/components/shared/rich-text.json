@@ -9,6 +9,15 @@
   "attributes": {
     "body": {
       "type": "richtext"
+    },
+    "theme": {
+      "type": "enumeration",
+      "default": "default",
+      "enum": [
+        "default",
+        "tinted",
+        "accent"
+      ]
     }
   }
 }

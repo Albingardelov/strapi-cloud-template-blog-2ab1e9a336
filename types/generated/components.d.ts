@@ -19,6 +19,8 @@ export interface SharedQuote extends Struct.ComponentSchema {
   };
   attributes: {
     body: Schema.Attribute.Text;
+    theme: Schema.Attribute.Enumeration<['default', 'tinted', 'accent']> &
+      Schema.Attribute.DefaultTo<'default'>;
     title: Schema.Attribute.String;
   };
 }
@@ -32,6 +34,8 @@ export interface SharedRichText extends Struct.ComponentSchema {
   };
   attributes: {
     body: Schema.Attribute.RichText;
+    theme: Schema.Attribute.Enumeration<['default', 'tinted', 'accent']> &
+      Schema.Attribute.DefaultTo<'default'>;
   };
 }
 
